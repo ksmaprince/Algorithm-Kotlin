@@ -94,17 +94,25 @@ class LinkedList<T: Any> {
     fun deleteAt(index: Int): T?{
         return if (isEmpty()){
             null
-        }else{
-            var cur = head
-            var i = 0
-
+        }
+        else if (index == 0){
+            pop()
+        }else if (index == size-1){
+            deleteLast()
+        }
+        else{
+            var prep = head
+            var succ = head!!.next
+            var i = 1
             while (i != index){
+                prep = prep!!.next
+                succ = succ!!.next
                 i++
-                cur = cur!!.next
             }
-            val data = cur!!.data
-            if (cur.next != null) cur = cur!!.next!!.next
-            else cur = null
+            val data = prep!!.next!!.data
+            prep.next = succ!!.next
+            succ =succ.next
+
             size--
             data
         }

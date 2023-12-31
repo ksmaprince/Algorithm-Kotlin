@@ -10,18 +10,15 @@ fun main(args: Array<String>) {
     dll.addLast("E")
 //
 //
-//    dll.addLast("D")
-//    dll.addLast("E")
+    println(dll.toString())
 //
-//    println(dll.toString())
-//
-//    dll.addAt(1, "G")
-//    println(dll.toString())
+    dll.addAt(1, "G")
+    println(dll.toString())
 //    println("Size: ${dll.size}")
 
-//    println("AT 0: ${dll.getAt(3)}")
+    println("AT 0: ${dll.getAt(3)}")
 
-   // println("Pop: ${dll.pop()}")
+    println("Pop: ${dll.pop()}")
 
 //    println("Delete Last: ${dll.deleteLast()}")
 //
@@ -29,7 +26,7 @@ fun main(args: Array<String>) {
 //
 //    dll.addLast("PP")
 //    dll.addFirst("TT")
-//    dll.addAt(3, "XX")
+    dll.addAt(3, "XX")
 //    println(dll.toString())
 
     println(dll.toString())
