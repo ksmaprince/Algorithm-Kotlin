@@ -1,3 +1,3 @@
 # Data Structures and Algorithms Implementation in Kotlin.
 
-A Computer Science course, Datastructure and Algorithm, implementated in Kotlin and Java Programming Language.
+A Computer Science course, Data Structures and Algorithms, implementated in Kotlin Programming Language.
